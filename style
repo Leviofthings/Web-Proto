@@ -1,0 +1,5 @@
+header{
+    background-color: #f2bf1a;
+    width: 100%;
+    color: blue;
+}
