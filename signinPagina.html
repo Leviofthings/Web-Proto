@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NS</title>
+    <link rel="stylesheet" type="text/css" href="css/pageReset.css">
+    <link rel="stylesheet" type="text/css" href="css/CSS.css">
+    <link rel="stylesheet" type="text/css" href="css/Fonts.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Inloggen</a>
+        <h2>Aanbevolen</h2>
+        <a href="#">Aanbevolen</a>
+        <h2>Sorteer op</h2>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#">Populair</a>
+        <h2>Thema</h2>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#">Sport</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <h2>Genre</h2>
+        <a href="#">Humor</a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+
+
+
+    <header>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer; color:#036;" onclick="openNav()">&#9776;</span>
+        </div>
+
+        <div>
+            <a id="logo" href="#.html"><img src="img/web-Logo.svg" alt="Logo"></a>
+        </div>
+        <div class="headerEl"><a href="#.html"><h2>Schrijf je verhaal</h2></a></div>
+        <div class="headerEl"><a href="#.html"><h2>Bewaarde verhalen</h2></a></div>
+        <div class="headerEl" id="search">
+            <input type="text" name="search" onkeyup="myFunction()" placeholder="zoeken...">
+            <a href="#"><img src="img/search.svg"></a>
+        </div>
+        <div class="headerEl" id="loginIconDiv">
+            <a href="loginPagina.html"><img src="img/Profile-icon.svg" alt="foto inloggen"></a>
+            <a href="loginPagina.html"><h2>login</h2></a>
+
+        </div>
+    </header>
+
+    <section id="loginForm">
+        <!--LABELmoet ook erbij-->
+        <div id="loginAchtergrond">
+            <h2>NS Stories account aanmaken</h2>
+            <form action="action_page.php">
+                <fieldset>
+                    <legend>
+                        <h3>Persoonlijke gegevens</h3></legend>
+                    <h3>Naam</h3>
+                    <br>
+                    <input type="text" name="gebruikersnaam" value="">
+                    <br>
+                    <h3>Achternaam</h3>
+                    <br>
+                    <input type="text" name="wachtwoord" value="">
+                    <br>
+                    <legend>
+                        <h3>Inloggegevens</h3></legend>
+                    <h3>E-mailadres</h3>
+                    <br>
+                    <input type="text" name="wachtwoord" value="">
+                    <br>
+                    <h3>Wachtwoord</h3>
+                    <br>
+                    <input type="text" name="wachtwoord" value="">
+                    <br>
+                    <h3>Bevestig wachtwoord</h3>
+                    <br>
+                    <input type="text" name="wachtwoord" value="">
+                    <br>
+                    <input id="submit" type="submit" value="Aanmaken">
+                </fieldset>
+            </form>
+        </div>
+        <!--loginAchtergrond-->
+    </section>
+    <!--loginForm-->
+</body>
+
+</html>

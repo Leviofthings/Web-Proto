@@ -1,40 +1,335 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
- <link rel="stylesheet" href="style.css">
-      <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>HTML?</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NS Reisverhalen</title>
+    <link rel="stylesheet" type="text/css" href="css/pageReset.css">
+    <link rel="stylesheet" type="text/css" href="css/CSS.css">
+    <link rel="stylesheet" type="text/css" href="css/Fonts.css">
 </head>
-<body>
 
 
-<header>
-  <h1>NS Reisverhalen</h1>
-<div class="login"><a href="login.html">Log In / registreer</a></div>
-</header>
-<div class="imgcontainer">
-      <img alt="Headerimg" src="img/headerimage1.jpg"/>
+
+<body class="body">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="loginPagina.html">> Log in</a>
+        <a href="#">> Aanbevolen</a>
+        <a href="bewaardPagina.html">> Bewaard</a>
+        <h2>Sorteer op</h2>
+        <a href="#">Numeriek (1-100)</a>
+        <a href="#">Alfabetisch (a-z)</a>
+        <a href="#">Meest besproken</a>
+        <a href="#">Populariteit</a>
+        <h2>Filteren op thema</h2>
+        <a href="#">Reizen</a>
+        <a href="#">Vaderschap</a>
+        <a href="#">Stijl</a>
+        <a href="#">Lang</a>
+        <a href="#">Kort</a>
+        <a href="#">Amsterdam</a>
+        <a href="#">Eten</a>
+        <a href="#">Personen</a>
+        <a href="#">Satire</a>
+        <a href="#">Horror</a>
+        <a href="#">Bizar</a>
+        <a href="#">Fantasie</a>
     </div>
-<div class="flex-container">
+
+
+  
+    <header>
+        <div id="main">
+            <span style="font-size:30px;cursor:pointer; color:#036;" onclick="openNav()">&#9776;
+            <h1>Menu</h1></span>
+            
+             </div>
+        <div id="closebtn">
+        <a href="javascript:void(0)" onclick="closeNav()">&times;</a>
+          
+            </div>
+        <div>
+            <a id="logo" href="#.html"><img src="img/web-Logo.svg" alt="Logo"></a>
+        </div>
+       
+        <div class="headerEl" id="loginIconDiv">
+           <a href="loginPagina.html"><h2>log in/registreer</h2></a>
+        </div>
+    </header>
+
+<div class="headerimage-container">
+    <img id="headerimage1" src="img/headerimage1.jpg" alt="Header">
+        <img id="headerimage2" src="img/headerimage2.jpg" alt="Header">
+        <img id="headerimage3" src="img/headerimage3.jpg" alt="Header">
+</div>
+    <div class="search-container">
     <form action="demo_form.asp">
-<input type="text" name="Search" value="...">
+<input type="text" name="Search" placeholder=".....">
 </form>
-    <div class="button"><a href="#">Zoek</a></div>
+    <div class="myButton"><a href="index.html">Zoek</a></div>
     </div>
 
-<article class="article">
-  <h1>Stijloefeningen (97) – Freudiaans</h1>
-  <p>Ik stap uit de lul. Mijn aarsrivaal ligt te slapen in zijn kinderwagen. Wat een kutweer. De mensen zijn met zichzelf bezig, wat er hoogstwaarschijnlijk op neerkomt dat ze aan seks met hun moeder denken. Ik ben op weg naar de Openaarse Bilbiotheek van Amsterdam, om Stijloefeningen te lenen, een boek waarin Raymond Queneau op 99 verschillende manieren probeert te vertellen dat hij homoseksueel is en seks wil met een jongen met een lange lul, euh nek. Ik loop over een pik, met aan weerszijde diepe bouwkutten. Gigantische heipalen en drillende drilboren penetreren de koude grond.</p>
-    <p><strong>5 comments-.</strong><a href="Leesverder.html">.-Lees verder</a></p>
-</article>
+    <section id="mainContent">
 
-<footer>Levi Lisser</footer>
+        <section id="filters" class="col-1">
 
-</body>
+        </section>
+
+        <section id="gekozenFilters">
+            <div></div>
+        </section>
+
+        <section id="verhalenOverzicht" class="col-5">
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/verwarde_man.jpg">
+                    <h2 class="titelOverzicht">(84) – De verwarde man</h2>
+                    <h3>9 juni 2011</h3>
+                    <p>De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en ... </p>
+                </a>
+                <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>120</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 3</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/blind_mans.png">
+                    <h2 class="titelOverzicht">(80) – Blind</h2>
+                     <h3>3 juni 2011</h3>
+                    <p>Piepende remmen, bus 21 komt tot stilstand. De stem van de buschauffeur, naar mij gericht, zakelijk, niet vriendelijk,... </p>
+                </a>
+                 <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>80</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 2</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/western.jpg">
+                    <h2 class="titelOverzicht">(72) – Western</h2>
+                     <h3>23 mei 2011</h3>
+                    <p>Een stofwolk ontneemt het zicht op de wegrijdende postkoets, die mij net heeft afgezet voor het station van dit door god verlaten...  </p>
+                </a>
+                <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>170</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 18</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/batman.png">
+                    <h2 class="titelOverzicht">(77) – Onomatopee</h2>
+                     <h3>31 mei 2011</h3>
+                    <p>De ronk-ronk-bus komt met piiieeepende remmen tot stilstand en opent sssslissend en sssissend haar deuren.</p>
+                </a>
+                <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>67</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 0</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/Recept.jpg">
+                    <h2 class="titelOverzicht">(65) – Recept</h2>
+                     <h3>4 mei 2011</h3>
+                    <p>Dit gerecht is vrij eenvoudig te maken. Ideaal op een doordeweekse dag als je even niet weet wat je met het... </p>
+                </a>
+               <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>31</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 1</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/passie.jpg">
+                    <h2 class="titelOverzicht"> (58) – De Passie van Max</h2>
+                     <h3>22 april 2011</h3>
+                    <p>Ik klamp me vast aan het wagentje van mijn zoon. Hij slaapt. De busrit heb ik overleefd. Het is rond het middaguur, de mensen...  </p>
+                </a>
+                <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>110</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 4</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/stoned.jpg">
+                    <h2 class="titelOverzicht"> (73) – Stoned</h2>
+                     <h3>24 mei 2011</h3>
+                    <p>Zodra ik de bus uitstap steek ik een dikke vette joint op. De derde van de dag al. Ik neem een lange haal, inhaleer diep, ...  </p>
+                </a>
+               <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>122</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 2</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/toerists.jpg">
+                    <h2 class="titelOverzicht"> (82) – Toeristische route</h2>
+                     <h3>7 juni 2011</h3>
+                    <p>Als u naar links kijkt, ziet u het Centraal Station. Gebouwd tussen 1881 en 1889 door architect P.H.J. Cuypers of P.J.H. Cuypers, daar...  </p>
+                </a>
+               <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>88</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 1</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/clouds.jpg">
+                    <h2 class="titelOverzicht"> (86) – Alwetende verteller</h2>
+                     <h3>16 juni 2011</h3>
+                    <p>Kijk, daar gaat Max J. Molovich. Hij is net uit de bus gestapt en loopt nu achter een gifgroene kinderwagen waarin zijn zoon ligt te slapen... </p>
+                </a>
+               <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>123</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 2</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/gefrustreerd.jpg">
+                    <h2 class="titelOverzicht">(50) – Gefrustreerd</h2>
+                     <h3>12 april 2011</h3>
+                    <p>Ik stap uit die godverdomde stinkbus. De mensen krioelen als mieren over het stationsplein. Ik wil...  </p>
+                </a>
+              <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>143</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 5</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/haiku.jpg">
+                    <h2 class="titelOverzicht">(47) - Haiku</h2>
+                     <h3>7 april 2011</h3>
+                    <p>Op zoek naar een boek Een vrouw vraagt de weg en..  </p>
+                </a>
+               <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>66</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 1</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+            
+     <div class="verhaalContainer">
+                <a href="#">
+                    <img class="verhaalImg" src="img/haiku.jpg">
+                    <h2 class="titelOverzicht">(47) - Haiku</h2>
+                     <h3>7 april 2011</h3>
+                    <p>Op zoek naar een boek Een vrouw vraagt de weg en..  </p>
+                </a>
+               <div class="metaBottom">
+                    <div>
+                       <a href="#"> <h1>> verder lezen</h1></a></div>
+                    <div id="visible" class="imgBottom"><img src="img/eye-3-xxl.png" alt="views pic">
+                        <h2>66</h2></div>
+                     <div id="visible" class="imgBottom"><img src="img/commenticon.png" alt="views pic">
+                        <h2> 1</h2></div>
+                    <div class="imgBottom">
+                        <a href="#"><img id="saveIcon" src="img/floppy-disk-icon-95172.png" alt="save pic"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+
+    <script src="javascript/sideNav.js"></script>
+    <script src="javascript/cmda-carrousel.js"></script>
+    </body>
 </html>
-<!--[if lt IE 7]>
-<p class="chromeframe">U gebruikt een <strong>gedateerde</strong> browser. Overweeg om uw browser te <a href="http://browsehappy.com/">updaten</a> om veiliger en beter te browsen.</p>
-<![endif]-->
+
 

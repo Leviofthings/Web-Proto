@@ -1,0 +1,26 @@
+h1{
+     font-family:“Segoe UI”,Arial,Helvetica,sans-serif;
+    font-size: 1.1em;
+    font-weight: 100;
+    color: #0079d3;
+    
+}
+
+h2{
+    font-family:“Segoe UI”,Arial,Helvetica,sans-serif;
+    font-size: 1.3em;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+h3{
+    font-family:“Segoe UI”,Arial,Helvetica,sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+p{
+    font-family: sans-serif;
+    line-height: 1.4em;
+}
+
